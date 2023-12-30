@@ -13,7 +13,7 @@ This example contains the following services:
 * NGINX
 * MariaDB 10.11
 
-DEMI
+DEMI!
 
 To see similar projects with additional services, please visit https://github.com/lagoon-examples and to find out more about the services, please visit the documentation at https://docs.lagoon.sh/lagoon
 
