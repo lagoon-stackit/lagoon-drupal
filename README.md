@@ -17,7 +17,7 @@ DEMI!
 
 To see similar projects with additional services, please visit https://github.com/lagoon-examples and to find out more about the services, please visit the documentation at https://docs.lagoon.sh/lagoon
 
-## Requirements
+## Requirementss
 
 * [docker](https://docs.docker.com/install/)
 * [pygmy-go](https://www.github.com/pygmystack/pygmy)
