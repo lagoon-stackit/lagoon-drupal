@@ -8,7 +8,7 @@ x-volumes:
 x-environment:
   &default-environment
     # Route that should be used locally, if you are using pygmy, this route *must* end with .docker.amazee.io
-    LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-drupal-base}.docker.amazee.io
+    LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-drupal-base}.kk8s.keytec.de
     # Uncomment if you like to have the system behave like in production
     #LAGOON_ENVIRONMENT_TYPE: production
     # Uncomment to enable xdebug and then restart via `docker-compose up -d`
@@ -87,7 +87,7 @@ services:
   mariadb:
     image: uselagoon/mariadb-10.11-drupal:latest
     labels:
-      lagoon.type: mariadb
+      lagoon.type: mariadb-dbaas
       lando.type: mariadb-drupal
     ports:
       - "3306" # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
